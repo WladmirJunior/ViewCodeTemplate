@@ -22,7 +22,7 @@ public class ___FILEBASENAMEASIDENTIFIER___: UIView {
     
     // MARK: - PUBLIC API
 
-    public var delegate: ___VARIABLE_featureName___ViewDelegate?
+    public weak var delegate: ___VARIABLE_featureName___ViewDelegate?
     
     // MARK: - INITIALIZERS
     
@@ -32,7 +32,7 @@ public class ___FILEBASENAMEASIDENTIFIER___: UIView {
     }
 
     required init?(coder aDecoder: NSCoder) {
-        return nil
+        fatalError("init(coder:) has not been implemented")
     }
     
     // MARK: - PRIVATE

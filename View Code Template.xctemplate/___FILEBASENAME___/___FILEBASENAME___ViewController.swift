@@ -19,7 +19,7 @@ public class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
     // MARK: - PUBLIC API
 
-    public var delegate: ___FILEBASENAMEASIDENTIFIER___Delegate?
+    public weak var delegate: ___FILEBASENAMEASIDENTIFIER___Delegate?
 
     // MARK: - INITIALIZERS
 
@@ -39,7 +39,7 @@ public class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     override public func viewDidLoad() {
         super.viewDidLoad()
         setup()
-        viewModel?.viewDidLoad()
+        viewModel?.initState()
     }
     
     // MARK: - PRIVATE

@@ -19,7 +19,7 @@ public protocol ___VARIABLE_featureName___ViewModelType: AnyObject {
     var viewEntity: ___VARIABLE_featureName___ViewEntity? { get set }
     var viewState: ___VARIABLE_featureName___ViewState { get }
     
-    func viewDidLoad()
+    func initState()
 }
 
 public protocol ___VARIABLE_featureName___ViewControllerDelegate: AnyObject {

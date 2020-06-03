@@ -25,9 +25,9 @@ public class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Type 
 
     }
     
-    // MARK: - LIFE CYCLE
+    // MARK: - PUBLIC API
 
-    public func viewDidLoad() {
+    public func initState() {
         
     }
 }
