@@ -6,6 +6,7 @@
 //  Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 //
+import UIKit
 
 public protocol ___FILEBASENAMEASIDENTIFIER___: AnyObject {
     var content: UIView { get }
