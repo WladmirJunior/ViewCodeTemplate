@@ -7,15 +7,15 @@
 //
 //
 
-public protocol ___VARIABLE_featureName___ViewControllerType: AnyObject {
-    var contentView: ___VARIABLE_featureName___ViewType? { get }
-    var viewModel: ___VARIABLE_featureName___ViewModelType? { get }
+public protocol ___VARIABLE_featureName___ViewControllerProtocol: AnyObject {
+    var contentView: ___VARIABLE_featureName___ViewProtocol? { get }
+    var viewModel: ___VARIABLE_featureName___ViewModelProtocol? { get }
     var delegate: ___VARIABLE_featureName___ViewControllerDelegate? { get set }
     func updateView(with viewState: ___VARIABLE_featureName___ViewState)
 }
 
-public protocol ___VARIABLE_featureName___ViewModelType: AnyObject {
-    var viewController: ___VARIABLE_featureName___ViewControllerType? { get }
+public protocol ___VARIABLE_featureName___ViewModelProtocol: AnyObject {
+    var viewController: ___VARIABLE_featureName___ViewControllerProtocol? { get }
     var viewEntity: ___VARIABLE_featureName___ViewEntity? { get set }
     var viewState: ___VARIABLE_featureName___ViewState { get }
     

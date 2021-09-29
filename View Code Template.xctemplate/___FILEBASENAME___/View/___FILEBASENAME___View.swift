@@ -9,12 +9,12 @@
 
 import UIKit
 
-public class ___FILEBASENAMEASIDENTIFIER___: UIView {
+final public class ___FILEBASENAMEASIDENTIFIER___: UIView {
     
     // MARK: - UI
     
     private lazy var view: UIView = {
-        let view = UIView(frame: .zero)
+        let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .white
         return view
@@ -44,11 +44,11 @@ public class ___FILEBASENAMEASIDENTIFIER___: UIView {
     }
     
     private func buildViewHierarchy() {
-        
+        addSubview(view)
     }
     
     private func addConstraints() {
-    
+        view.constraintToSuperview()
     }
     
     private func updateView(with entity: ___VARIABLE_featureName___ViewEntity) {
@@ -56,7 +56,7 @@ public class ___FILEBASENAMEASIDENTIFIER___: UIView {
     }
 }
 
-extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_featureName___ViewType {
+extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_featureName___ViewProtocol {
     public func updateView(with viewState: ___VARIABLE_featureName___ViewState) {
         
     }
