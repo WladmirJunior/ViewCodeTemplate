@@ -36,19 +36,16 @@ public class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     }
 
     // MARK: - LIFE CYCLE
+    public override func loadView() {
+        contentSetup()
+    }
 
     override public func viewDidLoad() {
         super.viewDidLoad()
-        setup()
         viewModel?.initState()
     }
     
     // MARK: - PRIVATE
-    
-    private func setup() {
-        contentSetup()
-    }
-    
     private func contentSetup() {
         if let contentView = contentView {
             self.view = contentView.content
