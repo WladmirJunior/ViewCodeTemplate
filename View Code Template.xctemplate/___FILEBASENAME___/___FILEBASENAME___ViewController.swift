@@ -40,12 +40,16 @@ public class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
         contentSetup()
     }
 
-    override public func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
+        setup()
         viewModel?.initState()
     }
     
     // MARK: - PRIVATE
+    private func setup() {
+    }
+
     private func contentSetup() {
         if let contentView = contentView {
             self.view = contentView.content
