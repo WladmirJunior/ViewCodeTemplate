@@ -56,7 +56,7 @@ final public class ___FILEBASENAMEASIDENTIFIER___: UIView {
     }
 }
 
-extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_featureName___ViewType {
+extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_featureName___ViewProtocol {
     public func updateView(with viewState: ___VARIABLE_featureName___ViewState) {
         
     }

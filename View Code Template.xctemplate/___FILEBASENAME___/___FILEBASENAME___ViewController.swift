@@ -14,8 +14,8 @@ public class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
     // MARK: - PROPERTIES
 
-    public let viewModel: ___VARIABLE_featureName___ViewModelType?
-    public let contentView: ___VARIABLE_featureName___ViewType?
+    public let viewModel: ___VARIABLE_featureName___ViewModelProtocol?
+    public let contentView: ___VARIABLE_featureName___ViewProtocol?
 
     // MARK: - PUBLIC API
 
@@ -23,8 +23,8 @@ public class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
     // MARK: - INITIALIZERS
 
-    public init(contentView: ___VARIABLE_featureName___ViewType = ___VARIABLE_featureName___View(),
-                viewModel: ___VARIABLE_featureName___ViewModelType) {
+    public init(contentView: ___VARIABLE_featureName___ViewProtocol = ___VARIABLE_featureName___View(),
+                viewModel: ___VARIABLE_featureName___ViewModelProtocol) {
         self.contentView = contentView
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -36,19 +36,20 @@ public class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     }
 
     // MARK: - LIFE CYCLE
+    public override func loadView() {
+        contentSetup()
+    }
 
-    override public func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         setup()
         viewModel?.initState()
     }
     
     // MARK: - PRIVATE
-    
     private func setup() {
-        contentSetup()
     }
-    
+
     private func contentSetup() {
         if let contentView = contentView {
             self.view = contentView.content
@@ -57,7 +58,7 @@ public class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     }
 }
 
-extension ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Type {
+extension ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Protocol {
     public func updateView(with viewState: ___VARIABLE_featureName___ViewState) {
         contentView?.updateView(with: viewState)
     }

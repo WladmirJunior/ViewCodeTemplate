@@ -7,11 +7,11 @@
 //
 //
 
-public class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Type {
+public class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Protocol {
 
     // MARK: - PROPERTIES
     
-    public weak var viewController: ___VARIABLE_featureName___ViewControllerType?
+    public weak var viewController: ___VARIABLE_featureName___ViewControllerProtocol?
     public var viewEntity: ___VARIABLE_featureName___ViewEntity?
     public var viewState: ___VARIABLE_featureName___ViewState = .isEmpty {
         didSet {
